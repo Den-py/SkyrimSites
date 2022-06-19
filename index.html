@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow" />
+    <meta name="description"
+        content="Этот сайн будет полезен тем кто хочет переехать в Провинцию Скарим или же просто желает подчерпнуть информацию и владениях этого замечательного места!">
+    <meta name="keywords" content="Skyrim, Скайрим, Виндхельм, Вайтран, Рифтен, Морфал, Владение Винтерхол, Владение Истмарк, разрешение на проживание">
+    <title>Заявка на разрешение проживания во владении провинции Скайрим!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_head.css">
+    <script src="jquery-3.6.0.js"></script>
+
+</head>
+
+<body class="container_grid">
+    <a id="start" href=""></a>
+    <header>
+        <a id="head_logo" href="#start"><img id="logo" src="./image/ico_skyrim.svg" alt=""></a>
+        <div id="head_a">
+            <a id="nav_1" href="index.html">
+                <div><p>Главная</p></div>
+            </a>
+            <a id="nav_2" href="page_Winterhold.html">           
+                <div><p>Владения</p></div>
+            </a>
+            <a id="nav_3" href="form.html">
+                <div><p>Подать заявку</p></div>
+            </a>
+        </div>
+    </header>
+
+    <img class="start_img" src="./image/0.jpg" alt="">
+    <div id="hellow">
+        <p id="hellow_text">Провинция Скайрим всегда рада новым жителям</p>
+        <div id="down_btn" href="#skyrim_0"><img  src="./image/down.svg" alt=""></div>
+    </div>
+
+    <a id="skyrim_0"></a>
+    <div class="info" id="skyrim">
+        <div class="text" id="skyrim_text">
+            <p>
+                Скайрим — родина нордов. Эта провинция, известная также как Старое Королевство или Отчизна, была
+                регионом Тамриэля, заселённым людьми, бежавшими с замерзающего континента Атмора.
+            </p>
+        </div>
+        <img class="text" id="skyrim_img" src="./image/landscape.png" alt="">
+    </div>
+
+    <div class="info" id="vladenia">
+        <img class="text" id="vladenia_img" src="./image/map.jpg" alt="">
+        <div class="text" id="vladenia_text">
+            <p>
+                Скайрим разделён на девять владений, каждым из которых управляет ярл. Ярл находится на военной
+                службе у своего холда, а также возглавляет локальные войска. Ярл правит городом и некоторой частью
+                земель вокруг него, но не более. Для получения разрешения на проживание во владении, отправте заявку.
+            </p>
+        </div>
+    </div>
+
+    <div class="info" id="list">
+        <div class="btn_arrow" id="button_left" onclick="leftButton()"> <img class="arrow" src="./image/left.svg"
+                alt=""></div>
+        <div class="cards card_visible" id="card_1">
+            <div class="province_1">
+                <img class="img_2" src="./image/left_2.svg" alt="">
+                <p>Белый Берег</p>
+                <img class="img_2" src="./image/right_2.svg" alt="">
+            </div>
+            <div class="province_2"><img class="img_1" src="./image/ico_Dawnstar.svg" alt="">
+            </div>
+            <p class="province_5">Столица: Данстар</p>
+            <p class="province_3"> Пустынная местность, занятая обширными
+                ледяными и снежными
+                пространствами. Её пределы простираются от центра Скайрима вплоть до северного побережья. Там, в
+                столичном городе Данстар, расположен один из самых оживлённых портов провинции.
+            </p>
+            <div class="province_4">
+                <div class="btn btn_form">Отправить заявку</div>
+                <div class="btn btn_a" onclick="location.href='page_Dawnstar.html'">Посмотреть подробнее</div>
+            </div>
+        </div>
+        <div class="cards card_visible" id="card_2">
+            <div class="province_1">
+                <img class="img_2" src="./image/left_2.svg" alt="">
+                <p>Владение Вайтран</p>
+                <img class="img_2" src="./image/right_2.svg" alt="">
+            </div>
+            <div class="province_2"><img class="img_1 img_h" src="image/ico_Whiterun.svg" alt=""></div>
+            <p class="province_5">Столица: Вайтран</p>
+            <p class="province_3">Центральное владение отличается обширными
+                зелёными лугами, на
+                которых расположены многочисленные фермы. Через Вайтран проходит немало дорог, соединяющих между собой
+                удалённые владения.
+            </p>
+            <div class="province_4">
+                <div class="btn btn_form">Отправить заявку</div>
+                <div class="btn btn_a" onclick="location.href='page_Whiterun.html'">Посмотреть подробнее</div>
+            </div>
+        </div>
+        <div class="cards card_visible" id="card_3">
+            <div class="province_1">
+                <img class="img_2" src="./image/left_2.svg" alt="">
+                <p>Владение Винтерхолд</p>
+                <img class="img_2" src="./image/right_2.svg" alt="">
+            </div>
+            <div class="province_2"><img class="img_1" src="./image/ico_Winterhold.svg" alt="">
+            </div>
+            <p class="province_5">Столица: Винтерхолд</p>
+            <p class="province_3">"Это промозглое, занесённое снегами
+                владение на
+                северо-восточной
+                окраине Скайрима совершенно не приспособлено для жизни. Не исключено, что маги Коллегии Винтерхолда
+                избрали для себя это место, рассчитывая на относительное уединение.
+            </p>
+            <div class="province_4">
+                <div class="btn btn_form">Отправить заявку</div>
+                <div class="btn btn_a" onclick="location.href='page_Winterhold.html'">Посмотреть подробнее</div>
+            </div>
+        </div>
+        <div class="cards card_unvisible" id="card_4">
+            <div class="province_1">
+                <img class="img_2" src="./image/left_2.svg" alt="">
+                <p>Владение Истмарк</p>
+                <img class="img_2" src="./image/right_2.svg" alt="">
+            </div>
+            <div class="province_2"><img class="img_1" src="./image/ico_Windhelm.svg" alt="">
+            </div>
+            <p class="province_5">Столица: Виндхельм</p>
+            <p class="province_3">Истмарк расположен у восточных границ
+                Скайрима и соседствует с
+                Морровиндом. Ярл Ульфрик Буревестник правит из древнего города Виндхельм. Он со своими сторонниками
+                представляет главную вашу угрозу.
+            </p>
+            <div class="province_4">
+                <div class="btn btn_form">Отправить заявку</div>
+                <div class="btn btn_a" onclick="location.href='page_Windhelm.html'">Посмотреть подробнее</div>
+            </div>
+        </div>
+        <div class="cards card_unvisible" id="card_5">
+            <div class="province_1">
+                <img class="img_2" src="./image/left_2.svg" alt="">
+                <p>Владение Предел</p>
+                <img class="img_2" src="./image/right_2.svg" alt="">
+            </div>
+            <div class="province_2"><img class="img_1" src="image/ico_Markarth.svg" alt=""></div>
+            <p class="province_5">Столица: Маркарт</p>
+            <p class="province_3">Занимающий западные границы Скайрима Предел
+                почти весь покрыт
+                крутыми скалистыми горами. Мало что произрастает в этом недружелюбном краю, однако его столица, Маркарт,
+                являет собой практически неприступную каменную крепость, которая в ходе войны могла бы стать идеальной
+                оборонительной позицией для любой из сторон.
+            </p>
+            <div class="province_4">
+                <div class="btn btn_form">Отправить заявку</div>
+                <div class="btn btn_a" onclick="location.href='page_Markarth.html'">Посмотреть подробнее</div>
+            </div>
+        </div>
+        <div class="cards card_unvisible" id="card_6">
+            <div class="province_1">
+                <img class="img_2" src="./image/left_2.svg" alt="">
+                <p>Владение Рифт</p>
+                <img class="img_2" src="./image/right_2.svg" alt="">
+            </div>
+            <div class="province_2"><img class="img_1" src="./image/ico_Riften.svg" alt=""></div>
+            <p class="province_5">Столица: Рифтен</p>
+            <p class="province_3">Это владение расположено на юго-восточной
+                окраине Скайрима, и,
+                как и в Пределе на западе, здесь господствуют высокие горные вершины. Климат в Рифте мягче, чем в
+                северных владениях, и растительности здесь больше, поэтому фермерское хозяйство процветает.
+            </p>
+            <div class="province_4">
+                <div class="btn btn_form">Отправить заявку</div>
+                <div class="btn btn_a" onclick="location.href='page_Riften.html'">Посмотреть подробнее</div>
+            </div>
+        </div>
+        <div class="cards card_unvisible" id="card_7">
+            <div class="province_1">
+                <img class="img_2" src="./image/left_2.svg" alt="">
+                <p>Владение Фолкрит</p>
+                <img class="img_2" src="./image/right_2.svg" alt="">
+            </div>
+            <div class="province_2"><img class="img_1 img_h5" src="./image/ico_Falkreath.svg" alt="">
+            </div>
+            <p class="province_5">Столица: Фолкрит</p>
+            <p class="province_3">Город расположен на юге Скайрима, во владении
+                Фолкрит, рядом с
+                границами Сиродила и Хаммерфелла. Основой экономики города являются пиломатериалы, получаемые из
+                близлежащих лесов. Главной достопримечательностью города является знаменитое кладбище героев, являющееся
+                последним пристанищем многих поколений людей со всего Скайрима.
+            </p>
+            <div class="province_4">
+                <div class="btn btn_form">Отправить заявку</div>
+                <div class="btn btn_a" onclick="location.href='page_Falkreath.html'">Посмотреть подробнее</div>
+            </div>
+        </div>
+        <div class="cards card_unvisible" id="card_8">
+            <div class="province_1">
+                <img class="img_2" src="./image/left_2.svg" alt="">
+                <p>Владение Хаафингар</p>
+                <img class="img_2" src="./image/right_2.svg" alt="">
+            </div>
+            <div class="province_2"><img class="img_1 img_h" src="image/ico_Solitude.svg" alt=""></div>
+            <p class="province_5">Столица: Солитьюд</p>
+            <p class="province_3">Солитьюд, город верховных королей Скайрима и
+                столица владения Хаафингар, всегда встречал Империю с неизменным радушием. Немало торговых путей
+                сходится сюда по рекам, и вряд ли в Скайриме найдётся более гостеприимный народ, чем в этом владении.
+            </p>
+            <div class="province_4">
+                <div class="btn btn_form">Отправить заявку</div>
+                <div class="btn btn_a" onclick="location.href='page_Solitude.html'">Посмотреть подробнее</div>
+            </div>
+        </div>
+        <div class="cards card_unvisible" id="card_9">
+            <div class="province_1">
+                <img class="img_2" src="./image/left_2.svg" alt="">
+                <p>Владение Хьялмарк</p>
+                <img class="img_2" src="./image/right_2.svg" alt="">
+            </div>
+            <div class="province_2"><img class="img_1 img_h" src="./image/ico_Morthal.svg" alt=""></div>
+            <p class="province_3">Столица: Морфал</p>
+            <p class="province_3">Владение делится поровну на открытую всем
+                ветрам тундру с разбросанными по ней фермами и большой зловонный солончак. Здесь мало интересного, разве
+                что столица владения — Морфал.
+            </p>
+            <div class="province_4">
+                <div class="btn btn_form">Отправить заявку</div>
+                <div class="btn btn_a" onclick="location.href='page_Morthal.html'">Посмотреть подробнее</div>
+            </div>
+        </div>
+        <div class="btn_arrow" id="button_right" onclick="rightButton()"> <img class="arrow" src="./image/right.svg"
+                alt=""></div>
+    </div>
+
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+
+</html>

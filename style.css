@@ -1,0 +1,395 @@
+
+.container_grid {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 70px 5fr 1fr 3fr 1fr 4fr 1fr 6fr 1fr;
+}
+
+#hellow {
+    grid-row: 2/3;
+    grid-column: 1/9;
+    text-align: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns:  3fr 5fr 3fr;
+    grid-template-rows: 4fr 3fr 2fr 3fr;
+    background: rgba(0, 0, 0, 0.20);
+}
+
+.start_img {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    width: 100%;
+}
+
+#skyrim_0 {
+    grid-row: 3/4;
+    grid-column: 1/9;
+}
+
+.info {
+    padding: 10px;
+    background: #202020;
+    
+}
+
+.text {
+    background: rgba(64, 64, 64, 0.6);
+    width: 60%;
+    height: 100%;
+}
+
+#skyrim {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    padding: 5% 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#skyrim_text {
+    width: 30%;
+}
+#skyrim_text > p {
+    font-size: 3vh;
+}
+
+#skyrim_img {
+    object-fit: contain;
+    height: 100%;
+}
+
+#vladenia {
+    grid-row: 6/7;
+    grid-column: 2/3;
+    padding: 5% 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#vladenia_text {
+    width: 30%;
+}
+
+#vladenia_text > p {
+    font-size: 3vh;
+}
+#list {
+    grid-row: 8/9;
+    grid-column: 2/3;
+    padding: 5% 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 2%;
+    padding: 1%;
+}
+
+.province_1 {
+    display: flex;
+    width: 100%;
+    height: 8%;
+    justify-content: center;
+    align-content: center;
+}
+
+.province_2 {
+    display: flex;
+    max-width: 100%;
+    max-height: 30%;
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.province_1 > p {
+    width: 50%;
+    text-align: center
+}
+
+.province_5 {
+    width: 100%;
+    height: 10%;
+}
+.province_5 > p {
+    width: 100%;
+    text-align: center;
+}
+
+.province_3 {
+    width: 100%;
+    height: 40%;
+}
+
+.province_4 {
+    width: 100%;
+    height: 22%;
+}
+
+.img_1 {
+    width: 100%;
+    max-height: 25vh;
+    object-fit:cover;
+}
+
+.img_2 {
+    padding: 5%;
+    width: 15%;
+    height:100%;
+    object-fit:cover;
+}
+.btn_arrow {
+    width: 10%;
+    padding: 1%;
+    
+}
+
+.arrow {
+    width: 100%;
+    cursor: pointer;
+}
+
+#down_btn {
+    cursor: pointer;
+    width: 20%;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    text-align: center;
+    display: grid;
+}
+
+#hellow_text {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+    font-size: 4vh;
+    color: white;
+}
+
+.btn {
+    cursor: pointer;
+    text-align: center;
+    border: rgb(230, 230, 230) solid 1px ;
+    
+    color:  rgb(230, 230, 230);
+    background: rgba(0, 0, 0, 0.3);
+    margin: 1em;
+    padding: 1em;
+}
+
+.btn_a {
+    background: rgba(75, 75, 75, 0.3);
+    color:  rgba(230, 230, 230, 0.752);
+    border: rgb(230, 230, 230) solid 0px ;
+}
+
+
+.card_visible {
+    display: flex;
+}
+
+.card_unvisible {
+    display: none;
+}
+
+@media all and (min-width: 900px) and (max-width: 1024px) {
+    .container_grid {
+        grid-template-columns: 1fr 12fr 1fr;
+        grid-template-rows: 70px 90vh 10vh 60vh 10vh 60vh 10vh 80vh 10vh;
+    }
+    
+    p {
+        font-size: 1px;
+    }
+
+    #skyrim_text > p {
+        font-size: 2.2vh;
+    }
+
+    #vladenia_text > p {
+        font-size: 2.2vh;
+    }
+
+    .province_1 > p {
+        font-size: 1.7vh;
+    }
+
+    .img_1 {
+        margin: 7% 0 0 0;
+    }
+
+    .province_3 {
+        display: none;
+    }
+
+    .province_4 {
+        width: 100%;
+        height: 65%;
+    }
+
+    
+
+
+}
+
+@media all and (max-width: 900px) {
+    .container_grid {
+        grid-template-columns: 1fr 12fr 1fr;
+        grid-template-rows: 70px 90vh 10vh 40vh 10vh 60vh 10vh 30fr 10vh;
+    }
+    
+    p {
+        font-size: 1px;
+    }
+
+    #skyrim_text > p {
+        font-size: 2.2vh;
+    }
+
+    #vladenia_text > p {
+        font-size: 2.2vh;
+    }
+
+    .province_1 > p {
+        font-size: 1.7vh;
+    }
+
+    .img_1 {
+        margin: 7% 0 0 0;
+    }
+
+    .province_3 {
+        display: none;
+    }
+
+    .province_4 {
+        width: 100%;
+        height: 65%;
+    }
+
+    #list {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .btn_arrow {
+        display: none;
+    }
+
+    .img_1 {
+        width: 100%;
+        max-height: 25vh;
+        object-fit:cover;
+    }
+    
+    .img_2 {
+        padding: 5%;
+        width: 15%;
+        height:100%;
+        object-fit:cover;
+    }
+    
+    .province_1 {
+        display: flex;
+        width: 30%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .province_2 {
+        display: flex;
+        width: 30%;
+        max-height: 90%;
+        padding: 10px;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .province_1 > p {
+        width: 100%;
+        text-align: center;
+        font-size: 3vh;
+    }
+    
+    .province_5 {
+        display: none;
+        width: 30%;
+        height: 10%;
+    }
+    .province_5 > p {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .province_3 {
+        width: 100%;
+        height: 40%;
+    }
+    
+    .province_4 {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 100%;
+        justify-content: center;
+
+        
+    }
+
+    .card_unvisible {
+        display: flex;
+        opacity: 1;
+    }
+    
+    #vladenia {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #vladenia_text {
+        width: 100%;
+    }
+
+    #skyrim {
+        flex-direction: column;
+        flex-flow: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #skyrim_text {
+        width: 100%;
+        height: 40%;
+    }
+
+    #skyrim_img {
+        object-fit: contain;
+        height: 80%;
+    }
+
+    .img_h {
+        width: 70%
+    }
+
+    .img_h5 {
+        width: 45%
+    }
+
+    
+}
+

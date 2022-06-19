@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка</title>
+</head>
+<style>
+    body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        background-image: url(./image/ico_.svg);
+        background-image: url(./image/Skyrim10-leather-bg.jpg);
+    }
+
+    .form > form {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(75, 75, 75);
+        width: 100%;
+        padding: 5%;
+        color: rgb(230, 230, 230);
+        font-size: large;
+        
+    }
+
+    input {
+        color: rgb(230, 230, 230);
+        background-color: rgba(0, 0, 0, 0.20);
+        height: 3vh;
+        padding: 3%;
+    }
+
+    input:focus {
+        background-color: rgba(0, 0, 0, 0.40);
+        border-color: rgb(230, 230, 230);
+    }
+
+    button {
+        background-color: rgb(230, 230, 230);
+        height: 5vh;
+        margin: 4%;
+    }
+
+    fieldset{
+        background-color: rgba(0, 0, 0, 0.20);
+        padding: 3vh;
+        height: 26.5vh;
+        border-radius: 15px;
+        border-color: rgba(0, 0, 0, 0.20);
+    }
+
+    .radio {
+        display: inline-flex;
+    }
+
+    .block {
+        display: flex;
+        padding: 2vh;
+
+    }
+
+    .t1 {
+        
+        flex-direction: column;
+        width: 4in;
+    }
+
+    .t2 {
+        display: block;
+        align-content: center;
+        text-align: justify ;
+    }
+    label{
+        padding: 5% 0;
+        vertical-align: text-top;
+    }
+
+    .t3 {
+        justify-content: center;
+    }
+    select, option{
+        color: rgb(230, 230, 230);
+        background-color: rgba(0, 0, 0, 0.20);
+        height: 5vh;
+        font-size: medium;
+    }
+    
+    option {
+        background-color: rgb(20, 20, 20, 0.80);
+    }
+
+
+
+    textarea {  
+        color: rgb(230, 230, 230);
+        background-color: rgba(0, 0, 0, 0.20);
+        resize: none; 
+        font-size: large;
+        }
+
+
+</style>
+
+<body>
+    <div class="form container">
+        <form action="" method="post">
+            
+                <div class="block t1">
+                    <label for="user_lastname">Фамилия</label>
+                    <input type="text" name="user_lastname" id="user_lastname" class="container" required>
+                </div>
+                <div class="block t1">
+                    <label for="user_name">Имя</label>
+                    <input type="text" name="user_name" id="user_name" class="container">
+                </div>
+                <div class="block t1" >
+                    <label for="user_email">Почта</label>
+                    <input type="text" name="user_email" id="user_email" class="container" data-title="Пароль для создаваемого аккаунта" required>
+                </div>
+           
+            <div class="block t1">
+                <label for="subject"> Выберете владение, разрешение на проживание в котором хотите получить </label>
+                <select name="subject" size="1" id="subject">
+                    <option value="sub1">Белый Берег</option>
+                    <option value="sub2">Владение Вайтран</option>
+                    <option value="sub3">Владение Винтерхолд</option>
+                    <option value="sub4">Владение Истмарк</option>
+                    <option value="sub5">Владение Рифт</option>
+                    <option value="sub6">Владение Фолкрит</option>
+                    <option value="sub7">Владение Хаафингар</option>
+                    <option value="sub8">Владение Хьялмарк</option>
+                    <option value="sub9">Владение Предел</option>
+                </select>
+            </div>
+           
+            <div class="block t1 t3" >
+                <button type="reset" class="container"> Сбросить </button>
+                <button type="submit" class="container"> Отправить </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
